@@ -13,6 +13,8 @@
 		8475634B254F13E0004F66BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8475634A254F13E0004F66BC /* Assets.xcassets */; };
 		8475634E254F13E0004F66BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8475634D254F13E0004F66BC /* Preview Assets.xcassets */; };
 		84756351254F13E0004F66BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8475634F254F13E0004F66BC /* LaunchScreen.storyboard */; };
+		8475635A254F140E004F66BC /* WorkoutTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84756359254F140E004F66BC /* WorkoutTracker.swift */; };
+		8475635E254F142F004F66BC /* HeartRateGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475635D254F142F004F66BC /* HeartRateGraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8475634D254F13E0004F66BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84756350254F13E0004F66BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84756352254F13E0004F66BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84756359254F140E004F66BC /* WorkoutTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTracker.swift; sourceTree = "<group>"; };
+		8475635D254F142F004F66BC /* HeartRateGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateGraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				84756344254F13DC004F66BC /* AppDelegate.swift */,
 				84756346254F13DC004F66BC /* SceneDelegate.swift */,
 				84756348254F13DC004F66BC /* ContentView.swift */,
+				84756359254F140E004F66BC /* WorkoutTracker.swift */,
+				8475635D254F142F004F66BC /* HeartRateGraphView.swift */,
 				8475634A254F13E0004F66BC /* Assets.xcassets */,
 				8475634F254F13E0004F66BC /* LaunchScreen.storyboard */,
 				84756352254F13E0004F66BC /* Info.plist */,
@@ -146,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84756345254F13DC004F66BC /* AppDelegate.swift in Sources */,
+				8475635E254F142F004F66BC /* HeartRateGraphView.swift in Sources */,
 				84756347254F13DC004F66BC /* SceneDelegate.swift in Sources */,
+				8475635A254F140E004F66BC /* WorkoutTracker.swift in Sources */,
 				84756349254F13DC004F66BC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
