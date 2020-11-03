@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    var workoutTracker  = WorkoutTracker()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HeartRateGraphView(workoutTracker: workoutTracker)
     }
 }
 
