@@ -15,6 +15,10 @@
 		84756351254F13E0004F66BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8475634F254F13E0004F66BC /* LaunchScreen.storyboard */; };
 		8475635A254F140E004F66BC /* WorkoutTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84756359254F140E004F66BC /* WorkoutTracker.swift */; };
 		8475635E254F142F004F66BC /* HeartRateGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475635D254F142F004F66BC /* HeartRateGraphView.swift */; };
+		847C427F2552BDC400939FB6 /* HeartRateGraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847C427E2552BDC400939FB6 /* HeartRateGraphData.swift */; };
+		847C42822552BDFA00939FB6 /* HeartRateGraphPlotShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847C42812552BDFA00939FB6 /* HeartRateGraphPlotShape.swift */; };
+		847C42862552BE5200939FB6 /* PlotHVLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847C42852552BE5200939FB6 /* PlotHVLines.swift */; };
+		847C42892552BEA100939FB6 /* GraphBackgroundSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847C42882552BEA100939FB6 /* GraphBackgroundSegment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		84756352254F13E0004F66BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84756359254F140E004F66BC /* WorkoutTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTracker.swift; sourceTree = "<group>"; };
 		8475635D254F142F004F66BC /* HeartRateGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateGraphView.swift; sourceTree = "<group>"; };
+		847C427E2552BDC400939FB6 /* HeartRateGraphData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateGraphData.swift; sourceTree = "<group>"; };
+		847C42812552BDFA00939FB6 /* HeartRateGraphPlotShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateGraphPlotShape.swift; sourceTree = "<group>"; };
+		847C42852552BE5200939FB6 /* PlotHVLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotHVLines.swift; sourceTree = "<group>"; };
+		847C42882552BEA100939FB6 /* GraphBackgroundSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphBackgroundSegment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,10 @@
 				84756348254F13DC004F66BC /* ContentView.swift */,
 				84756359254F140E004F66BC /* WorkoutTracker.swift */,
 				8475635D254F142F004F66BC /* HeartRateGraphView.swift */,
+				847C42882552BEA100939FB6 /* GraphBackgroundSegment.swift */,
+				847C42852552BE5200939FB6 /* PlotHVLines.swift */,
+				847C42812552BDFA00939FB6 /* HeartRateGraphPlotShape.swift */,
+				847C427E2552BDC400939FB6 /* HeartRateGraphData.swift */,
 				8475634A254F13E0004F66BC /* Assets.xcassets */,
 				8475634F254F13E0004F66BC /* LaunchScreen.storyboard */,
 				84756352254F13E0004F66BC /* Info.plist */,
@@ -152,8 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84756345254F13DC004F66BC /* AppDelegate.swift in Sources */,
+				847C42892552BEA100939FB6 /* GraphBackgroundSegment.swift in Sources */,
+				847C42822552BDFA00939FB6 /* HeartRateGraphPlotShape.swift in Sources */,
 				8475635E254F142F004F66BC /* HeartRateGraphView.swift in Sources */,
 				84756347254F13DC004F66BC /* SceneDelegate.swift in Sources */,
+				847C42862552BE5200939FB6 /* PlotHVLines.swift in Sources */,
+				847C427F2552BDC400939FB6 /* HeartRateGraphData.swift in Sources */,
 				8475635A254F140E004F66BC /* WorkoutTracker.swift in Sources */,
 				84756349254F13DC004F66BC /* ContentView.swift in Sources */,
 			);
