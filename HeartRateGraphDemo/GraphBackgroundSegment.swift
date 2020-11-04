@@ -39,13 +39,22 @@ struct GraphBackgroundSegment: View {
         }
     }
     
+    
+    /// Scale a value to the width of the entire frame.
+    /// - Parameter width: Width to be scaled.
+    /// - Returns: Scaled width.
     func scaleWidth(_ width: Double) -> CGFloat {
         CGFloat(width.rangeMap(inMin: 0, inMax: totalSegmentWidth, outMin: 0, outMax: Double(geo.size.width)))
     }
     
+    
+    /// Scale a value to the height of the entire frame.
+    /// - Parameter height: Height to be scaled.
+    /// - Returns: Scaled height.
     func scaleHeight(_ height: Double) -> CGFloat {
         CGFloat(height.rangeMap(inMin: 0, inMax: maxSegmentHeight, outMin: 0, outMax: Double(geo.size.height)))
     }
+    
     
     struct RectangleSegment {
         let width: Double
@@ -53,6 +62,10 @@ struct GraphBackgroundSegment: View {
         let color: Color
     }
     
+    
+    /// Create the data for building the segments.
+    /// - Parameter graphData: The graph data.
+    /// - Returns: The segment data.
     static func makeSegmentData(from graphData: HeartRateGraphData) -> [RectangleSegment] {
         var data = [RectangleSegment]()
         let groupIndices = Array(Set(graphData.data.map { $0.groupIndex })).sorted()
@@ -70,6 +83,10 @@ struct GraphBackgroundSegment: View {
         return data
     }
     
+    
+    /// Create an array of colors across the complete rainbow.
+    /// - Parameter n: The number of colors to create.
+    /// - Returns: An array of SwiftUI `Color` views.
     static func colorArray(numberOfColors n: Int) -> [Color] {
         var colors = [Color]()
         

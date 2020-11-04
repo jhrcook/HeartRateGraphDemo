@@ -11,7 +11,7 @@ import SwiftUI
 struct HeartRateGraphView: View {
     
     var graphData: HeartRateGraphData
-    
+
     let numYGridLines = 3
     var yGridValues: [Double] {
         let min = graphData.minY.rounded(.down)
