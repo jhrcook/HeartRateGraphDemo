@@ -13,4 +13,4 @@ var body: some View {
 }
 ```
 
-<center><img src="images/2020-11-03_demo.png" width="75%"></center>
+<center><img src="images/2020-11-04_demo.png" width="75%"></center>
