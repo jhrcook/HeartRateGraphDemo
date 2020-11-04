@@ -10,7 +10,7 @@ import SwiftUI
 struct GraphBackgroundSegment: View {
     
     var graphData: HeartRateGraphData
-    var geo: GeometryProxy
+    var size: CGSize
     var segmentData: [RectangleSegment]
     
     var totalSegmentWidth: Double {
@@ -21,9 +21,9 @@ struct GraphBackgroundSegment: View {
         return segmentData.map { $0.height }.max()!
     }
     
-    init(graphData: HeartRateGraphData, geo: GeometryProxy) {
+    init(graphData: HeartRateGraphData, size: CGSize) {
         self.graphData = graphData
-        self.geo = geo
+        self.size = size
         segmentData = GraphBackgroundSegment.makeSegmentData(from: graphData)
     }
     
@@ -44,7 +44,7 @@ struct GraphBackgroundSegment: View {
     /// - Parameter width: Width to be scaled.
     /// - Returns: Scaled width.
     func scaleWidth(_ width: Double) -> CGFloat {
-        CGFloat(width.rangeMap(inMin: 0, inMax: totalSegmentWidth, outMin: 0, outMax: Double(geo.size.width)))
+        CGFloat(width.rangeMap(inMin: 0, inMax: totalSegmentWidth, outMin: 0, outMax: Double(size.width)))
     }
     
     
@@ -52,7 +52,7 @@ struct GraphBackgroundSegment: View {
     /// - Parameter height: Height to be scaled.
     /// - Returns: Scaled height.
     func scaleHeight(_ height: Double) -> CGFloat {
-        CGFloat(height.rangeMap(inMin: 0, inMax: maxSegmentHeight, outMin: 0, outMax: Double(geo.size.height)))
+        CGFloat(height.rangeMap(inMin: 0, inMax: maxSegmentHeight, outMin: 0, outMax: Double(size.height)))
     }
     
     
