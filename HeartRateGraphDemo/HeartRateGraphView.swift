@@ -85,8 +85,3 @@ struct HeartRateGraphView_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 300, height: 200))
     }
 }
-
-
-//HStack(alignment: .center, spacing: 0) {
-
-//}
